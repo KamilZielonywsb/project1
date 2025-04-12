@@ -1,0 +1,55 @@
+<mvc:View controllerName="project1.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <VBox class="sapUiSmallMargin">
+        <Button 
+            text="Back"
+            press="onBackPress"
+            icon="sap-icon://nav-back"
+            type="Transparent"
+            class="sapUiSmallMarginTop" />
+        
+        <Button 
+            text="Edit"
+            press="onEditPress"
+            visible="true"
+            type="Emphasized"
+            class="sapUiSmallMarginTop" />
+        
+        <Panel headerText="{i18n>productDetails}" class="sapUiSmallMarginTop" expandable="false">
+            <HBox>
+                <Avatar class="sapUiSmallMarginEnd" initials="PR" />
+                
+                <VBox class="sapUiMediumMarginEnd">
+                    <Text text="Name:" />
+                    <Input value="{productModel>/Name}" editable="{=${editModel>/editMode} }"/>
+
+                    <Text text="Category:" />
+                    <Input value="{productModel>/Category}" editable="{=${editModel>/editMode} }"/>
+
+                    <Text text="Manufacturer:" />
+                    <Input value="{productModel>/Manufacturer}" editable="{=${editModel>/editMode} }"/>
+                </VBox>
+                
+                <VBox>
+                    <Text text="Price:" />
+                    <Input value="{productModel>/Price}" editable="{=${editModel>/editMode} }"/>
+
+                    <Text text="Stock:" />
+                    <Input value="{productModel>/Stock}" editable="{=${editModel>/editMode} }"/>
+                </VBox>
+            </HBox>
+        </Panel>
+
+        <Panel headerText="Product Description" class="sapUiSmallMarginTop" expandable="false">
+            <Input value="{productModel>/Description}" editable="{=${editModel>/editMode} }"/>
+        </Panel>
+
+        <HBox visible="{${editModel>/editMode}}">
+            <Button text="Save" press="onSavePress" />
+            <Button text="Cancel" press="onCancelPress" />
+        </HBox>
+    </VBox>
+    
+</mvc:View>

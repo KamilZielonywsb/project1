@@ -1,0 +1,54 @@
+<mvc:View 
+  controllerName="project1.controller.Stats"
+  xmlns:mvc="sap.ui.core.mvc" 
+  xmlns="sap.m"
+  xmlns:viz="sap.viz.ui5.controls"
+  xmlns:vizFeeding="sap.viz.ui5.controls.common.feeds"
+  xmlns:vizData="sap.viz.ui5.data">
+
+  <Page title="Wykresy produktów" showNavButton="true" navButtonPress="onBackPress">
+    <!--
+      Prosty wykres kolumnowy (bar) prezentujący dane z modelu "Products".
+      Zakładamy, że Price jest liczbą lub da się go rzutować na liczbę.
+      Jeśli jest w stringu, trzeba to w razie czego obsłużyć (np. konwersją).
+    -->
+    <viz:VizFrame
+       id="idVizFrame"
+       width="100%"
+       height="400px"
+       uiConfig="{applicationSet:'fiori'}"
+       vizType="bar"
+       vizProperties='{
+       "title": {
+        "visible": true,
+        "text": "Wykres cen produktów"
+      },
+      "plotArea": {
+        "dataLabel": {
+          "visible": true
+        }
+      }
+    }'>
+       
+       <viz:dataset>
+         <vizData:FlattenedDataset data="{Products>/Products}">
+           <vizData:dimensions>
+             <vizData:DimensionDefinition
+               name="Category"
+               value="{Products>Category}" />
+           </vizData:dimensions>
+           <vizData:measures>
+             <vizData:MeasureDefinition
+               name="Price"
+               value="{path: 'Products>Price', type: 'sap.ui.model.type.Float'}" />
+           </vizData:measures>
+         </vizData:FlattenedDataset>
+       </viz:dataset>
+       
+       <viz:feeds>
+         <vizFeeding:FeedItem uid="categoryAxis" type="Dimension" values="Category" />
+         <vizFeeding:FeedItem uid="valueAxis" type="Measure" values="Price" />
+       </viz:feeds>
+    </viz:VizFrame>
+  </Page>
+</mvc:View>

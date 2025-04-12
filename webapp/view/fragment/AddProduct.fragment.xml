@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog title="Add Product" class="sapUiResponsivePadding" contentWidth="25rem">
+        <content>
+            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTop sapUiSmallMarginBottom">
+                <Label text="Name" required="true" />
+                <Input id="NameInput" placeholder="e.g. iPhone 15" />
+
+                <Label text="Category" required="true" />
+                <Input id="CategoryInput" placeholder="e.g. Smartphone" />
+
+                <Label text="Manufacturer" required="false" />
+                <Input id="ManufacturerInput" placeholder="e.g. Apple" />
+
+                <Label text="Price" required="true" />
+                <Input id="PriceInput" placeholder="e.g. 3999" />
+
+                <Label text="Stock" required="false" />
+                <Input id="StockInput" placeholder="e.g. 10" />
+
+                <Label text="Description" />
+                <Input id="DescriptionInput" placeholder="Product description..." />
+            </VBox>
+        </content>
+        <buttons>
+            <Button text="Save" type="Emphasized" press="onSaveProduct" />
+            <Button text="Cancel" press="onCancelProduct" />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

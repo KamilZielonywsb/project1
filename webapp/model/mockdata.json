@@ -1,0 +1,95 @@
+{
+    "Products": [
+      {
+        "ID": "1",
+        "Name": "Laptop Lenovo Legion 5",
+        "Category": "Laptop",
+        "Manufacturer": "Lenovo",
+        "Price": "4.499",
+        "Stock": "15",
+        "Description": "Gamingowy laptop z procesorem Ryzen 7, 16GB RAM i kartą graficzną RTX 3060."
+      },
+      {
+        "ID": "2",
+        "Name": "Smartfon Samsung Galaxy S23",
+        "Category": "Smartfon",
+        "Manufacturer": "Samsung",
+        "Price": "3.899",
+        "Stock": "30",
+        "Description": "Flagowy smartfon Samsunga z aparatem 200 MP i ekranem AMOLED 120Hz."
+      },
+      {
+        "ID": "3",
+        "Name": "Monitor LG UltraGear 27''",
+        "Category": "Monitor",
+        "Manufacturer": "LG",
+        "Price": "1.399",
+        "Stock": "22",
+        "Description": "Monitor gamingowy 27 cali z odświeżaniem 165Hz i czasem reakcji 1ms."
+      },
+      {
+        "ID": "4",
+        "Name": "Tablet Apple iPad Air",
+        "Category": "Tablet",
+        "Manufacturer": "Apple",
+        "Price": "2.999",
+        "Stock": "18",
+        "Description": "Lekki i wydajny tablet z procesorem M1 i ekranem Liquid Retina."
+      },
+      {
+        "ID": "5",
+        "Name": "Kamera GoPro HERO11",
+        "Category": "Kamera",
+        "Manufacturer": "GoPro",
+        "Price": "2.199",
+        "Stock": "10",
+        "Description": "Wodoodporna kamera sportowa 5.3K z zaawansowaną stabilizacją obrazu."
+      },
+      {
+        "ID": "6",
+        "Name": "Słuchawki Sony WH-1000XM5",
+        "Category": "Słuchawki",
+        "Manufacturer": "Sony",
+        "Price": "1.799",
+        "Stock": "25",
+        "Description": "Bezprzewodowe słuchawki z aktywnym tłumieniem hałasu i długim czasem pracy."
+      },
+      {
+        "ID": "7",
+        "Name": "Router TP-Link Archer AX73",
+        "Category": "Router",
+        "Manufacturer": "TP-Link",
+        "Price": "649",
+        "Stock": "40",
+        "Description": "Szybki router Wi-Fi 6 z obsługą do 5400 Mb/s i 6 antenami."
+      },
+      {
+        "ID": "8",
+        "Name": "Klawiatura Logitech MX Keys",
+        "Category": "Akcesorium",
+        "Manufacturer": "Logitech",
+        "Price": "499",
+        "Stock": "35",
+        "Description": "Elegancka klawiatura z podświetleniem i obsługą wielu urządzeń jednocześnie."
+      },
+      {
+        "ID": "9",
+        "Name": "Powerbank Xiaomi 20 000 mAh",
+        "Category": "Powerbank",
+        "Manufacturer": "Xiaomi",
+        "Price": "179",
+        "Stock": "50",
+        "Description": "Wydajny powerbank z szybkim ładowaniem i dwoma portami USB."
+      },
+      {
+        "ID": "10",
+        "Name": "Telewizor Philips Ambilight 55''",
+        "Category": "Telewizor",
+        "Manufacturer": "Philips",
+        "Price": "3.499",
+        "Stock": "12",
+        "Description": "Smart TV 4K z systemem Android i efektownym podświetleniem Ambilight."
+      }
+    ]
+  }
+  
