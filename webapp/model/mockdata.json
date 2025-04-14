@@ -89,6 +89,15 @@
         "Price": "3.499",
         "Stock": "12",
         "Description": "Smart TV 4K z systemem Android i efektownym podświetleniem Ambilight."
+      },
+      {
+        "ID": "11",
+        "Name": "Vibe Szmex Allnight 69''",
+        "Category": "Vibe",
+        "Manufacturer": "Szmex",
+        "Price": "3.499",
+        "Stock": "12",
+        "Description": "Smart TV 4K z systemem Android i efektownym podświetleniem Ambilight."
       }
     ]
   }
